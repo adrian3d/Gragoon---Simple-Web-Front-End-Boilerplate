@@ -17,9 +17,7 @@ var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 var cond = require('gulp-cond');
 
-var config = {
-  prod: false
-};
+var config = require('./config.json');
 
 // Paths
 const paths = {
@@ -97,7 +95,7 @@ gulp.task('watch', function(bs, prod) {
   livereload.listen();
 
   if (typeof bs !== 'undefined') {
-    bs = typeof bs === 'string' ? bs : 'vr2.cinemur.dev';
+    bs = typeof bs === 'string' ? bs : config.localhost;
 
     browserSync.init({
       proxy: bs

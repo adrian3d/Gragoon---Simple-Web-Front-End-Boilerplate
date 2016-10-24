@@ -15,7 +15,7 @@ gulp watch
 gulp watch --bs
 ```
 
-Par défaut, browser-sync se branche sur l'adresse 'localhost'. Il est possible de préciser une autre URL
+Par défaut, browser-sync se branche sur l'adresse 'localhost' (à changer dans le fichier `config.json si besoin). Il est possible de préciser une autre URL
 
 Exemple :
 ```sh
@@ -29,4 +29,4 @@ gulp build
 
 ### Compilation pour la prod
 
-Il est possible d'ajouter un paramètre `--prod` aux tâches `build` et `watch` pour compiler les assets pour la prod.
+Il est possible d'ajouter un paramètre `--prod` aux tâches `build` et `watch` pour compiler les assets pour la prod. L'environnement par défaut peut être changé dans le fichier `config.json`.

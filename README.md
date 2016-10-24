@@ -30,3 +30,15 @@ gulp build
 ### Compilation pour la prod
 
 Il est possible d'ajouter un paramètre `--prod` aux tâches `build` et `watch` pour compiler les assets pour la prod. L'environnement par défaut peut être changé dans le fichier `config.json`.
+
+## Coding rules
+
+### CSScomb
+
+Le fichier `.csscomb.json` permet la validation (voire formatage) des coding rules CSS. Pour tout complément d'informations, veuillez vous référer au site suivant :
+[CSSComb](http://csscomb.com/)
+
+### JSCS
+
+Le fichier `.jscsrc` permet la validation (voire formatage) des coding rules JS, par défaut configuré sur celles de Google. Pour tout complément d'informations, veuillez vous référer au site suivant :
+[JSCS](http://jscs.info/)

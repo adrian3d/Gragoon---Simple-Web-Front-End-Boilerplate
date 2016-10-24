@@ -1,0 +1,61 @@
+/**
+ *
+ * Helpers
+ *
+ */
+
+.is-zone-link {
+	position:relative;
+}
+
+.is-zone-link a:before {
+	content:'';
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:rgba(0,0,0,0);
+}
+
+.is-inlineblockmiddle{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.is-verticalalign:before{
+  	content: '';
+  	width: 0;
+  	height: 100%;
+  	margin-left: -0.25em;
+  	@extend .is-inlineblockmiddle;
+}
+
+.is-verticalalign {
+	.wrapper {
+  		@extend .is-inlineblockmiddle;
+  	}
+}
+
+.is-fullscreen-slide {
+	width: 100%;
+	height: 100vh;
+}
+
+.is-invisible {
+    opacity: 0;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}

@@ -1,0 +1,36 @@
+/**
+ *
+ * Mixins
+ *
+ */
+
+@function flex-typo($min-size, $max-size, $min-width, $max-width, $base-unit: 1em) {
+    @return calc(#{($min-size * $base-unit)} + #{($max-size - $min-size)} * ((100vw - #{($min-width * $base-unit)}/#{($max-width - $min-width)})));
+}
+
+@mixin aspect-ratio($width, $height, $pseudo-element: before) {
+	position: relative;
+
+	&:#{$pseudo-element} {
+		display: block;
+		content: '';
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+}
+
+@mixin vertical-align-transform() {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin horizontal-align-transform() {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin full-align-tranform() {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

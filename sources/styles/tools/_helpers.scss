@@ -8,22 +8,22 @@
 	position:relative;
 }
 
-.is-zone-link a:before {
+.is-zone-link > a:before {
 	content:'';
 	position:absolute;
 	left:0;
 	right:0;
 	top:0;
 	bottom:0;
-	background-color:rgba(0,0,0,0);
+	background-color: rgba(0, 0, 0, 0);
 }
 
-.is-inlineblockmiddle{
+.is-inlineblockmiddle {
     display: inline-block;
     vertical-align: middle;
 }
 
-.is-verticalalign:before{
+.is-verticalalign:before {
   	content: '';
   	width: 0;
   	height: 100%;
@@ -42,8 +42,9 @@
 	height: 100vh;
 }
 
-.is-invisible {
-    opacity: 0;
+.is-visible {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .is-hidden {

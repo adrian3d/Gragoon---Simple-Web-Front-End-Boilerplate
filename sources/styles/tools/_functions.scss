@@ -1,3 +1,8 @@
-@function pourcent($target, $base-width){
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
+}
+
+
+@function pourcent($target, $base-width) {
   @return (strip-units($target)/strip-units($base-width))*100%;
 }

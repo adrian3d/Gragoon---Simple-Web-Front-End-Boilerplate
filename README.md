@@ -38,7 +38,7 @@ Il est possible d'ajouter un paramètre `--prod` aux tâches `build` et `watch` 
 Le fichier `.csscomb.json` permet la validation (voire formatage) des coding rules CSS. Pour tout complément d'informations, veuillez vous référer au site suivant :
 [CSSComb](http://csscomb.com/)
 
-### JSCS
+### ESLINT
 
-Le fichier `.jscsrc` permet la validation (voire formatage) des coding rules JS, par défaut configuré sur celles de Google. Pour tout complément d'informations, veuillez vous référer au site suivant :
-[JSCS](http://jscs.info/)
+Le fichier `.eslint` permet la validation (voire formatage) des coding rules JS, par défaut configuré sur les règles ['Standard'](http://standardjs.com/). Pour tout complément d'informations, veuillez vous référer au site suivant :
+[ESLINT](http://eslint.org/)

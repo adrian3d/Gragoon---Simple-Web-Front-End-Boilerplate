@@ -1,43 +1,44 @@
 {
-  "name": "cinemur-vr-2",
+  "name": "front-end-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-eslint": "^3.0.1",
+    "gulp-watch": "^4.3.11"
+  },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
-    "bourbon": "^4.2.7",
     "browser-sync": "^2.15.0",
     "css-mqpacker": "^5.0.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.12",
     "gulp-concat": "^2.6.0",
     "gulp-cond": "^1.0.0",
-    "gulp-jscs": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
     "gulp-livereload": "^3.8.1",
     "gulp-param": "^1.0.3",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.1.1",
+    "gulp-prettyerror": "^1.1.1",
     "gulp-rename": "^1.2.2",
-    "gulp-rewrite-css": "0.0.9",
+    "gulp-rewrite-css": "1.0.1",
     "gulp-sass": "^2.3.2",
     "gulp-sass-bulk-import": "^1.0.1",
-    "gulp-sourcemaps": "^1.6.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-svgmin": "^1.2.3",
     "gulp-uglify": "^2.0.0",
     "run-sequence": "^1.2.2",
+    "standard": "^8.6.0",
     "webpack-stream": "^3.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CINEMUR/cinemur-vr-site.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CINEMUR/cinemur-vr-site/issues"
-  },
-  "homepage": "https://github.com/CINEMUR/cinemur-vr-site#readme"
+  "license": "ISC"
 }

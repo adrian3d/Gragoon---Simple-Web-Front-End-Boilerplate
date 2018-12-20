@@ -1,4 +1,6 @@
-# Web front-end boilerplate
+# Simple Web front-end boilerplate
+
+Boilerplate pour démarrer un projet front-end sans framework JS.
 
 ## Compilation des assets
 
